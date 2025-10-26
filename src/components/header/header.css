@@ -1,0 +1,408 @@
+/* Professional Header Styles */
+.navbar {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 0 !important;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f59e0b !important;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #fbbf24 !important;
+  transform: translateY(-1px);
+}
+
+.nav-link {
+  color: #cbd5e1 !important;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 0 0.25rem;
+}
+
+.nav-link:hover {
+  color: #f8fafc !important;
+  background: rgba(37, 99, 235, 0.2);
+  transform: translateY(-1px);
+}
+
+.nav-link.active {
+  color: #f8fafc !important;
+  background: rgba(37, 99, 235, 0.3);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+}
+
+/* Search Form Styling */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+.search-input {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  color: #f8fafc;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #64748b;
+}
+
+.search-button {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Modern User Menu */
+.user-menu {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.user-menu-container {
+  position: relative;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+  color: #0f172a !important;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.login-button:hover::before {
+  left: 100%;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.login-icon {
+  background: rgba(15, 23, 42, 0.1);
+  padding: 0.25rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover .login-icon {
+  background: rgba(15, 23, 42, 0.2);
+  transform: scale(1.1);
+}
+
+/* Authenticated User Profile Button */
+.user-profile-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  color: #f8fafc !important;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.user-profile-button:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+  border-color: rgba(245, 158, 11, 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.user-avatar {
+  font-size: 1.5rem;
+  color: #f59e0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.user-menu-container:hover .user-avatar {
+  color: #fbbf24;
+  transform: scale(1.1);
+}
+
+.user-name {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+/* Dropdown Menu */
+.user-menu-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.user-menu-container:hover .user-menu-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.user-menu-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: 20px;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95));
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg);
+}
+
+.user-menu-dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #e2e8f0 !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.user-menu-dropdown a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+  transform: scaleY(0);
+  transition: transform 0.2s ease;
+}
+
+.user-menu-dropdown a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8fafc !important;
+  transform: translateX(4px);
+}
+
+.user-menu-dropdown a:hover::before {
+  transform: scaleY(1);
+}
+
+.user-menu-dropdown a:first-child {
+  margin-top: 0.5rem;
+}
+
+.user-menu-dropdown a:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f59e0b;
+  transition: all 0.2s ease;
+}
+
+.user-menu-dropdown a:hover .dropdown-icon {
+  color: #fbbf24;
+  transform: scale(1.1);
+}
+
+/* Authenticated User Dropdown Menu */
+.user-menu-dropdown.authenticated {
+  min-width: 220px;
+}
+
+.user-menu-dropdown .dropdown-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  margin: 0.5rem 1rem;
+}
+
+.user-menu-dropdown .dropdown-header {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.user-menu-dropdown .sign-out-link {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 0.5rem;
+  color: #f87171 !important;
+}
+
+.user-menu-dropdown .sign-out-link:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #fca5a5 !important;
+}
+
+.user-menu-dropdown .sign-out-link .dropdown-icon {
+  color: #f87171;
+}
+
+.user-menu-dropdown .sign-out-link:hover .dropdown-icon {
+  color: #fca5a5;
+}
+
+/* Legacy auth-buttons support */
+.auth-buttons {
+  display: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  .search-form {
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .user-menu {
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .user-menu-container {
+    width: 100%;
+  }
+  
+  .login-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .user-menu-dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-top: 0.5rem;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.9));
+  }
+  
+  .nav-link {
+    margin: 0.25rem 0;
+  }
+}
+
+/* Animation for header */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  animation: slideDown 0.5s ease-out;
+}
